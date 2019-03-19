@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import _ from 'lodash';
 import './App.css';
+import photos from './photos.json'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
+        {_.uniqBy(photos, 'id').map(photo => (
+          <a href={`https://www.flickr.com/photos/${photo.owner}/${photo.id}`}>
+            <img
+              alt={photo.title}
+              src={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+            />
           </a>
-        </header>
+        ))}
       </div>
     );
   }

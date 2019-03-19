@@ -1,8 +1,9 @@
 {
-  "name": "flickr-faves-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "flickr-faves-from-gallery",
+  "version": "0.2.0",
   "dependencies": {
+    "flickr-sdk": "^3.8.0",
+    "lodash": "^4.17.11",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.5"
@@ -21,5 +22,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "Get the latest favorite photos from the members of a given Flickr gallery. I personally use this to find new people to follow. First I build a small gallery of photos I really like, then I run this app to find photos that those people liked, and so on. This is a great way to find new LEGO MOCs (try gallery ID 72157707187816175)!",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [
+    "flickr",
+    "api",
+    "node",
+    "react"
+  ],
+  "author": "Jordan Kohl",
+  "license": "ISC"
 }
