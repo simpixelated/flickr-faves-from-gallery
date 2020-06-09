@@ -21,9 +21,8 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - name: Trigger Ghost Inspector test
       env:
         GHOST_INSPECTOR_API_KEY: ${{ secrets.GHOST_INSPECTOR_API_KEY }}
-
-    - name: Trigger Ghost Inspector test
       run: curl "https://api.ghostinspector.com/v1/tests/5c1d2470a97c85286291a6c2/execute/?apiKey=$GHOST_INSPECTOR_API_KEY&startUrl=https://simpixelated.com"
 
