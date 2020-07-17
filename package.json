@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "dependencies": {
     "flickr-sdk": "^3.9.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
