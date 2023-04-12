@@ -2,7 +2,7 @@
   "name": "flickr-faves-from-gallery",
   "version": "0.2.0",
   "dependencies": {
-    "flickr-sdk": "^3.10.0",
+    "flickr-sdk": "^6.1.2",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
